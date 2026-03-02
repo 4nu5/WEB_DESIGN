@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<style>
+    form{
+        background-color: antiquewhite;
+        padding: 80ptx;
+        color: rgb(10, 70, 100);
+        font-size:large;
+    }
+    label{
+        display: block;
+    }
+    input[type = text], input[type=email], select
+    {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
+    input[type=submit]
+    {
+        width: 100px;
+        background-color: aliceblue;
+        padding: 16px;
+        margin: 8px 0; 
+        border-radius: 60px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover
+    {
+        width: 150px;
+        background-color: rgb(17, 204, 48);
+        padding: 16px;
+        margin: 8px 0; 
+        border-radius: 60px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+        <label for="First">First Name</label>
+        <input type="text" name="First" id="First">
+        <label for="Last">Last Name</label>
+        <input type="text" id="Last" name="Last">
+        <label for="Email">Email</label>
+        <input type="email" name="Email" id="Email">
+        <label for="programme">Programme</label>
+        <select name="programme" id="programme">
+        <option value="DIIT">DIIT</option>
+        <option value="DCSI">DCSI</option>
+        <option value="FUCK">FUCK</option>
+        </select>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
